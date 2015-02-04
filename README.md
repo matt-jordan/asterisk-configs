@@ -50,9 +50,9 @@ If you do have a NAT, make sure you uncomment the localnet settings in the [tran
 
 While some handy subroutines have been set up to do the basic dialling, the following is a cheat sheet:
 
-1000: Dial Alice
-2000: Dial Bob
-10000: Place the channel into Stasis
+* 1000: Dial Alice
+* 2000: Dial Bob
+* 10000: Place the channel into Stasis
 
 Modify the STASIS_APP and STASIS_ARGS global variables for the Stasis application at extension 10000.
 
