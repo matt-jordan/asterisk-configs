@@ -60,5 +60,9 @@ Modify the STASIS_APP and STASIS_ARGS global variables for the Stasis applicatio
 
 A single ARI user has been configured with username/password of asterisk/asterisk.
 
+### ARI Applications
 
+The following applications are in the ari-apps folder:
+
+* conference.py: Registers as the 'conference' ARI application. Acts as a very, very basic conferencing application.
 
