@@ -7,6 +7,11 @@ Configurations I use for testing Asterisk. Currently, the configuration supports
 
 ### Install Script
 
+This script can:
+* Install system libraries needed for Asterisk and PJPROJECT
+* Download, configure, and install Asterisk and PJPROJECT
+* Install a set of configuration files that are useful for testing/hacking
+
 You should invoke this script such that it can install Asterisk and PJPROJECT. This generally, means installing using sudo; however, your mileage may vary. By default, this script will only install the Asterisk configuration files.
 
 Note that if you install Asterisk using some other mechanism, you may not be able to install the configuration files using this script.
@@ -16,7 +21,7 @@ Note that if you install Asterisk using some other mechanism, you may not be abl
 * -i: Pull down Asterisk/PJPROJECT and install it
 * -w: Wipe the existing configuration before installing the new configuration files
 
-Currently, you have you modify the install script if you'd like to install a different version of Asterisk.
+Currently, you have to modify the install script if you'd like to install a different version of Asterisk.
 
 ### Asterisk Configuration
 
