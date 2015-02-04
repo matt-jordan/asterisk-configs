@@ -14,6 +14,9 @@ install_prereqs() {
 	PACKAGES="${PACKAGES} subversion git libxslt1-dev"
 
 	aptitude install -y ${PACKAGES}
+
+	easy_install -U pip
+	pip install ari
 }
 
 install_pjproject() {

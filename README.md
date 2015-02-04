@@ -3,6 +3,8 @@ asterisk-configs
 
 Configurations I use for testing Asterisk. Currently, the configuration supports Asterisk 13.
 
+Since I use Linux Mint, the install script has been set up for that distribution. If you are using something else, you will need to modify the install script accordingly (in particular, the system library installation).
+
 **NOTE: THE ACCOUNTS USED HEREIN ARE EXTREMELY INSECURE. DO NOT USE.**
 
 ### Install Script
