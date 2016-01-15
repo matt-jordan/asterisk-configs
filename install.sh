@@ -1,14 +1,14 @@
 #!/bin/bash
 
 AST_VERSION=13
-AST_TARBALL=asterisk-13.2.0-rc1
+AST_TARBALL=asterisk-13.7.0
 PJPROJECT_TARBALL=pjproject-2.3
 CLEANUP=0
 
 install_prereqs() {
 	echo "*** Installing System Libraries ***"
 
-	PACKAGES="build-essential python-pip vim apache2 ssh ccache"
+	PACKAGES="build-essential python-pip vim apache2 ssh ccache pkg-config"
 	PACKAGES="${PACKAGES} libncurses-dev libssl-dev libxml2-dev libsqlite3-dev uuid-dev uuid"
 	PACKAGES="${PACKAGES} libspandsp-dev binutils-dev libsrtp-dev libedit-dev libjansson-dev"
 	PACKAGES="${PACKAGES} subversion git libxslt1-dev"
