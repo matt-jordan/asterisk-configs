@@ -1,7 +1,7 @@
 #!/bin/bash
 
 AST_VERSION=13
-AST_TARBALL=asterisk-13.10.0-rc1
+AST_TARBALL=asterisk-13.10.0-rc2
 PJPROJECT_TARBALL=pjproject-2.4.5
 CLEANUP=0
 
@@ -48,7 +48,7 @@ install_pjproject() {
 build_asterisk() {
 	if [ ! -d ${AST_TARBALL} ]; then
 		echo "*** Grabbing Asterisk: ${AST_TARBALL} ***"
-		sudo -u ${USERNAME} wget http://downloads.asterisk.org/pub/telephony/asterisk/${AST_TARBALL}.tar.gz
+		sudo -u ${USERNAME} wget http://downloads.asterisk.org/pub/telephony/asterisk/old-releases/${AST_TARBALL}.tar.gz
 		sudo -u ${USERNAME} tar -zxvf ${AST_TARBALL}.tar.gz
 	fi
 
