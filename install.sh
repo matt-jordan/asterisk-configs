@@ -1,8 +1,8 @@
 #!/bin/bash
 
 AST_VERSION=13
-AST_TARBALL=asterisk-13.7.0
-PJPROJECT_TARBALL=pjproject-2.3
+AST_TARBALL=asterisk-13.10.0-rc1
+PJPROJECT_TARBALL=pjproject-2.4.5
 CLEANUP=0
 
 install_prereqs() {
