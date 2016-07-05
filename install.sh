@@ -29,6 +29,8 @@ install_pjproject() {
 		sudo -u ${USERNAME} tar -zxvf ${PJPROJECT_TARBALL}.tar.gz
 	fi
 
+	sudo -u ${USERNAME} cp -v pjproject/config_site.h pjproject-${PJPROJECT_TARBALL}/pjlib/include/pj/config_site.h
+
 	pushd pjproject-${PJPROJECT_TARBALL}
 	sudo -u ${USERNAME} ./aconfigure CFLAGS="-g" --enable-shared --with-external-srtp --prefix=/usr
 	sudo -u ${USERNAME} make dep
